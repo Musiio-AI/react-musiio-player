@@ -49,7 +49,8 @@ const Description = () => (
     <h2>Documentation</h2>
     <p>
       You can read documentation about every player component{" "}
-      <a href="#">here</a>.
+      <a href="https://github.com/Musiio-AI/react-musiio-player#readme">here</a>
+      .
     </p>
   </div>
 );
