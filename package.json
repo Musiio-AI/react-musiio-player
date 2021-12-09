@@ -1,5 +1,5 @@
 {
-  "version": "1.0.65",
+  "version": "1.0.0",
   "description": "universal audio player for audio and youtube links",
   "name": "react-musiio-player",
   "main": "./dist/index.js",
@@ -13,7 +13,7 @@
     "watch": "webpack --watch",
     "serve": "webpack serve",
     "start": "npm run build:dev && npm run serve",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build:dev",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {

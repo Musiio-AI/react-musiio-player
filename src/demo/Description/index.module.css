@@ -29,3 +29,8 @@
 .text:last-child {
   margin-bottom: calc(64px - 24px);
 }
+
+.paragraph a {
+  color: #1ac6b8;
+  text-decoration: none;
+}
