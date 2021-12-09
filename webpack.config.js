@@ -19,12 +19,12 @@ const configDev = {
 const configProd = {
   mode: "production",
   entry: {
-    "react-fantastic-guacamole": "./index.js",
+    "react-musiio-player": "./index.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    library: "react-fantastic-guacamole",
+    library: "react-musiio-player",
     libraryTarget: "umd",
   },
   externals: {
