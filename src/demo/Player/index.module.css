@@ -1,9 +1,14 @@
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 40px;
+}
 .container {
   display: flex;
   margin: 0 auto;
   max-width: 784px;
   padding: 40px 24px;
-  background-color: lightgreen;
+  background-color: #fff4db;
   box-shadow: 0 1px 8px 0 rgba(34, 38, 39, 0.2);
   border-radius: 18px;
 }
@@ -55,13 +60,77 @@
   justify-content: center;
 }
 
-.playButton {
-  width: 32px;
-  height: 32px;
-  background-color: red;
-}
+.playButton,
 .pauseButton {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-left: 12px;
+  border: 2px solid #1ac6b8;
+  position: relative;
+  cursor: pointer;
+}
+.playButton:hover,
+.pauseButton:hover {
+  box-shadow: 0 1px 8px 0 rgba(34, 38, 39, 0.2);
+}
+
+.playButton::after,
+.pauseButton::after {
+  content: "PLAY";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1ac6b8;
+}
+.pauseButton::after {
+  content: "PAUSE";
+}
+
+.mainTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.prevButton,
+.nextButton {
+  cursor: pointer;
+  background-color: white;
   width: 32px;
   height: 32px;
-  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #dce0df;
+  border: solid 1px #dce0df;
+  line-height: 14px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+.prevButton:hover,
+.nextButton:hover {
+  color: #727677;
+  border-color: #727677;
+}
+
+.externalLink {
+  margin-bottom: 32px;
+}
+
+.externalLink a {
+  color: #1ac6b8;
+  text-decoration: none;
 }

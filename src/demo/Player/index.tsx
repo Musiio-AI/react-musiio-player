@@ -22,8 +22,12 @@ const Player = () => {
   const nextTrack = tracksList[currentTrackIndex + 1];
 
   return (
-    <>
-      <h2>Player demo</h2>
+    <div className={styles.wrapper}>
+      <h2 className={styles.mainTitle}>Player demo</h2>
+      <div className={styles.externalLink}>
+        You can also check out how musiio player works on{" "}
+        <a href="https://playlist.musiio.com">https://playlist.musiio.com</a>
+      </div>
       <div className={styles.container}>
         <div className={styles.videoFrameWrapper}>
           <VideoFrame width={234} height={132} />
@@ -35,8 +39,9 @@ const Player = () => {
               <div className={styles.artist}>{trackData.artist}</div>
             </div>
 
-            <div>
+            <div className={styles.buttonsWrapper}>
               <div
+                className={styles.prevButton}
                 onClick={() =>
                   onTrackLoad({
                     id: prevTrack.id,
@@ -47,13 +52,14 @@ const Player = () => {
                   })
                 }
               >
-                prev
+                {"<"}
               </div>
               <PlayPauseButton
                 playButtonClass={styles.playButton}
                 pauseButtonClass={styles.pauseButton}
               />
               <div
+                className={styles.nextButton}
                 onClick={() => {
                   onTrackLoad({
                     id: nextTrack.id,
@@ -64,7 +70,7 @@ const Player = () => {
                   });
                 }}
               >
-                next
+                {">"}
               </div>
             </div>
           </div>
@@ -77,7 +83,7 @@ const Player = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

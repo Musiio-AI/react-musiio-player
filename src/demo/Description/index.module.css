@@ -1,0 +1,31 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 12px 40px;
+}
+
+.code {
+  color: #727677;
+}
+
+.paragraph {
+  margin-bottom: 32px;
+}
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.text {
+  margin-bottom: 64px;
+}
+
+.text:last-child {
+  margin-bottom: calc(64px - 24px);
+}

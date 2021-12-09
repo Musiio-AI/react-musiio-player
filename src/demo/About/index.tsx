@@ -10,6 +10,10 @@ const About = () => (
       readOnly={true}
       value="npm install react-musiio-player"
     />
+    <div className={styles.text}>
+      Musiio player is a react component that let's you play both Youtube and
+      audio links without writing a lot of code or separating your music catalog
+    </div>
   </div>
 );
 

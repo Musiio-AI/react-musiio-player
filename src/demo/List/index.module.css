@@ -17,7 +17,7 @@
 
 .track:hover {
   cursor: pointer;
-  background-color: lightblue;
+  color: #008b87;
 }
 
 .cell {

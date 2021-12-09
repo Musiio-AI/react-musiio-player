@@ -1,5 +1,5 @@
 .container {
-  background-color: #727677;
+  background-color: #ffffff;
   padding: 12px 40px;
   width: 100%;
   box-sizing: border-box;
@@ -15,7 +15,7 @@
 
 .logo {
   background-image: url("./assets/logo.svg");
-  min-width: 95px;
+  min-width: 94px;
   height: 40px;
   cursor: pointer;
 }
